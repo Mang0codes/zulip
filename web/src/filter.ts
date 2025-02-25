@@ -1128,7 +1128,7 @@ export class Filter {
         if (this.single_term_type_returns_all_messages_of_conversation()) {
             return true;
         }
-        
+
         const term_types = this.sorted_term_types();
 
         if (_.isEqual(term_types, ["not-is-dm"])) {

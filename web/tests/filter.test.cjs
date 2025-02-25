@@ -327,8 +327,6 @@ test("basics", () => {
     assert.ok(filter.is_personal_filter());
     assert.ok(!filter.is_conversation_view());
 
-    
-
     terms = [{operator: "dm", operand: "joe@example.com"}];
     filter = new Filter(terms);
     assert.ok(filter.is_non_group_direct_message());
